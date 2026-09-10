@@ -1,0 +1,282 @@
+/* ================================
+   CONFIGURAÇÕES GERAIS
+================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #black;
+}
+
+
+/* ================================
+   CONTAINER DO PORTFÓLIO
+================================ */
+
+.portfolio {
+    width: 850px;
+    max-width: 100%;
+    margin: auto;
+    background-color: white;
+}
+
+
+/* ================================
+   CABEÇALHO
+================================ */
+
+.cabecalho {
+    background-color: #4169E1;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.cabecalho p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+
+/* ================================
+   CONTEÚDO
+================================ */
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+}
+
+
+/* ================================
+   COLUNA LATERAL
+================================ */
+
+.lateral {
+    padding: 20px;
+    border-right: 2px solid #d8d8d8;
+}
+
+.perfil {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+    border: 3px solid #24456d;
+
+    object-fit: cover;
+}
+
+.lateral h2 {
+    margin: 0 0 10px;
+    text-align: center;
+    color: #24456d;
+    font-size: 21px;
+}
+
+.lateral h3 {
+    margin: 10px 0 8px;
+    color: #333;
+    font-size: 16px;
+}
+
+.lateral p {
+    margin: 7px 0;
+    font-size: 13px;
+    color: #777;
+}
+
+.lateral ul {
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+.lateral li {
+    margin-bottom: 7px;
+    font-size: 13px;
+    color: #555;
+}
+
+.lateral hr {
+    border: 0;
+    border-top: 2px solid #ddd;
+    margin: 12px 0;
+}
+
+.projecto-link {
+    color: #2471a3;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+/* ================================
+   ÁREA PRINCIPAL
+================================ */
+
+.principal {
+    padding: 20px 22px;
+}
+
+.principal section {
+    margin-bottom: 12px;
+}
+
+.principal h2 {
+    color: #24456d;
+    font-size: 21px;
+    margin: 0 0 8px;
+}
+
+.principal p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+
+/* ================================
+   LINHAS SEPARADORAS
+================================ */
+
+.principal section > p {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+
+/* ================================
+   TABELA DE HABILIDADES
+================================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+th {
+    background-color: #dce7f2;
+    color: #444;
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #bfc5ca;
+}
+
+td {
+    padding: 7px;
+    border: 1px solid #c8cdd1;
+}
+
+tbody tr {
+    background-color: #fff;
+}
+
+
+/* ================================
+   FORMAÇÃO + EXPERIÊNCIA
+================================ */
+
+.duas-colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.duas-colunas section > h2 {
+    margin-top: 8px;
+}
+
+
+/* ================================
+   CAIXAS
+================================ */
+
+.caixa {
+    background-color: #f1f6fa;
+    border-left: 5px solid #24456d;
+    padding: 10px;
+    min-height: 70px;
+}
+
+.caixa strong {
+    color: #24456d;
+    font-size: 13px;
+}
+
+.caixa p {
+    margin-top: 5px;
+}
+
+
+/* ================================
+   PROJECTO
+================================ */
+
+.projecto {
+    min-height: 55px;
+}
+
+.projecto a {
+    color: #2471a3;
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+
+/* ================================
+   RODAPÉ
+================================ */
+
+footer {
+    background-color: #eef3f7;
+    color: #black;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .lateral {
+        border-right: none;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .duas-colunas {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .cabecalho h1 {
+        font-size: 25px;
+    }
+}
